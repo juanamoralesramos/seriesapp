@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-5">
+      <br>
+      <div class="col-11 mx-auto">
+          <table class="table table-striped" id="seriesTable">
+              <thead>
+                <tbody>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Channel</th>
+                    <th scope="col">Seasons</th>
+                  </tr>
+                  <tr *ngFor="let s of series">
+                      <th scope="row">{{s.id}}</th>
+                      <td style= "color: rgb(57, 57, 237);">{{s.name}}</td>
+                      <td>{{s.channel}}</td>
+                      <td>{{s.seasons}}</td>
+                  </tr>
+                </tbody>
+                  
+          </table>
+          <label>Seasons Average: {{average}}</label>
+      </div>
+  </div>
+</div>
